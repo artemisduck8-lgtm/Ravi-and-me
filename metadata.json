@@ -1,0 +1,8 @@
+{
+  "name": "Love (PokeEdition)",
+  "description": "A cutesy Pokemon-themed relationship companion for Fidel and Ravi featuring a baby trainer Skye, Rotom-chat, and adventures.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

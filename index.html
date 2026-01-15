@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love - PokeEdition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Quicksand', 'sans-serif'],
+              display: ['Fredoka', 'sans-serif'],
+            },
+            colors: {
+              poke: {
+                red: '#FF5D5D',
+                yellow: '#FFCB05',
+                blue: '#3B4CCA',
+                dark: '#212121',
+                cream: '#FFFEF0',
+                surface: '#FFFFFF',
+              },
+              type: {
+                fire: '#FA6C6C',
+                water: '#6890F0',
+                grass: '#48D0B0',
+                electric: '#FFD86F',
+                fairy: '#EE99AC',
+                psychic: '#F85888',
+                ice: '#98D8D8',
+              }
+            },
+            backgroundImage: {
+              'poke-pattern': "radial-gradient(#E5E7EB 1px, transparent 1px)",
+            },
+            backgroundSize: {
+              'poke-pattern': '20px 20px',
+            },
+            animation: {
+              'bounce-slow': 'bounce 3s infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFEF0;
+        background-image: radial-gradient(#FFCB05 1px, transparent 1px);
+        background-size: 40px 40px;
+        color: #212121;
+        overflow-x: hidden;
+      }
+      /* Cute scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFFEF0; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FFD86F; 
+        border-radius: 10px;
+        border: 2px solid #FFFEF0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.36.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.26.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
